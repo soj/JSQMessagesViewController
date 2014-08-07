@@ -36,6 +36,12 @@
 - (NSString *)text;
 
 /**
+ *  @return The body text of the message.
+ *  @warning You must not return `nil` from this method.
+ */
+- (UIImage *)image;
+
+/**
  *  @return The name of the user who sent the message.
  *  @warning You must not return `nil` from this method.
  */

@@ -99,6 +99,8 @@
  */
 @property (weak, nonatomic, readonly) UITextView *textView;
 
+@property (weak, nonatomic, readonly) UIImageView *imageView;
+
 /**
  *  The bubble image view of the cell that is responsible for displaying bubble images.
  *  The default value is `nil`.

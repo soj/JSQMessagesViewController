@@ -390,7 +390,13 @@ static void * kJSQMessagesKeyValueObservingContext = &kJSQMessagesKeyValueObserv
     NSString *messageText = [messageData text];
     NSParameterAssert(messageText != nil);
     
-    cell.textView.text = messageText;
+    if ([messageText length]>0) {
+        cell.textView.text = messageText;
+    } else if ([messageData image]) {
+        cell.imageView.image = [messageData image];
+//        cell.textView.text  = @"sldlsksdv sdlkfslkdf  slkdfs sdlkf lksdfl sdlkflks fnsd l knsdflk lskf sdflk slkdf lsdfsdlknf lskdflk s lksnfsdflk";
+    }
+    
     cell.messageBubbleImageView = [collectionView.dataSource collectionView:collectionView bubbleImageViewForItemAtIndexPath:indexPath];
     cell.avatarImageView = [collectionView.dataSource collectionView:collectionView avatarImageViewForItemAtIndexPath:indexPath];
     cell.cellTopLabel.attributedText = [collectionView.dataSource collectionView:collectionView attributedTextForCellTopLabelAtIndexPath:indexPath];

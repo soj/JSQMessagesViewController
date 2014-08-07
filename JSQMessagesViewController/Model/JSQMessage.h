@@ -42,6 +42,8 @@
  */
 @property (copy, nonatomic) NSDate *date;
 
+@property (copy, nonatomic) UIImage *image;
+
 #pragma mark - Initialization
 
 /**
@@ -66,6 +68,12 @@
 - (instancetype)initWithText:(NSString *)text
                       sender:(NSString *)sender
                         date:(NSDate *)date;
+
+
+
+- (instancetype)initWithImage:(UIImage *)image
+                       sender:(NSString *)sender
+                         date:(NSDate *)date;
 
 /**
  *  Returns a boolean value that indicates whether a given message is equal to the receiver.

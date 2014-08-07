@@ -38,6 +38,25 @@
     self = [self init];
     if (self) {
         _text = text;
+        _image = nil;
+        _sender = sender;
+        _date = date;
+    }
+    return self;
+}
+
+- (instancetype)initWithImage:(UIImage *)image
+                      sender:(NSString *)sender
+                        date:(NSDate *)date
+{
+    NSParameterAssert(image != nil);
+    NSParameterAssert(sender != nil);
+    NSParameterAssert(date != nil);
+    
+    self = [self init];
+    if (self) {
+        _image = image;
+        _text = @"";
         _sender = sender;
         _date = date;
     }
@@ -50,6 +69,7 @@
     if (self) {
         _text = @"";
         _sender = @"";
+        _image = nil;
         _date = [NSDate date];
     }
     return self;
@@ -60,6 +80,7 @@
     _text = nil;
     _sender = nil;
     _date = nil;
+    _image = nil;
 }
 
 #pragma mark - JSQMessage

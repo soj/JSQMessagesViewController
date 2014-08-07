@@ -373,10 +373,16 @@ const CGFloat kJSQMessagesCollectionViewCellLabelHeightDefault = 20.0f;
     
     CGFloat textInsetsTotal = [self jsq_messageBubbleTextContainerInsetsTotal];
     
-    CGRect stringRect = [[messageData text] boundingRectWithSize:CGSizeMake(maximumTextWidth - textInsetsTotal, CGFLOAT_MAX)
-                                                         options:(NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading)
-                                                      attributes:@{ NSFontAttributeName : self.messageBubbleFont }
-                                                         context:nil];
+    CGRect stringRect;
+    if ([[messageData text] length] >0) {
+        stringRect = [[messageData text] boundingRectWithSize:CGSizeMake(maximumTextWidth - textInsetsTotal, CGFLOAT_MAX)
+                                                      options:(NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading)
+                                                   attributes:@{ NSFontAttributeName : self.messageBubbleFont }
+                                                      context:nil];
+    } else {
+        UIImage *image = [messageData image];
+        stringRect = CGRectMake(0, 0, image.size.width, image.size.height);
+    }
     
     CGSize stringSize = CGRectIntegral(stringRect).size;
     

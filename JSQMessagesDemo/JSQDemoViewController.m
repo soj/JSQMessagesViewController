@@ -42,6 +42,8 @@ static NSString * const kJSQDemoAvatarNameWoz = @"Steve Wozniak";
                      [[JSQMessage alloc] initWithText:@"JSQMessagesViewController is nearly an exact replica of the iOS Messages App. And perhaps, better." sender:kJSQDemoAvatarNameJobs date:[NSDate date]],
                      [[JSQMessage alloc] initWithText:@"It is unit-tested, free, and open-source." sender:kJSQDemoAvatarNameCook date:[NSDate date]],
                      [[JSQMessage alloc] initWithText:@"Oh, and there's sweet documentation." sender:self.sender date:[NSDate date]],
+                     [[JSQMessage alloc] initWithImage:[UIImage imageNamed:@"test"] sender:self.sender date:[NSDate date]],
+                     [[JSQMessage alloc] initWithImage:[UIImage imageNamed:@"cake"] sender:kJSQDemoAvatarNameWoz date:[NSDate date]],
                      nil];
     
     /**
