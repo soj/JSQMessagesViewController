@@ -47,7 +47,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1HL-Om-LKw">
-                                <rect key="frame" x="6" y="0.0" width="238" height="94"/>
+                                <rect key="frame" x="14" y="10" width="220" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -55,12 +55,12 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="KYU-B8-cUW" secondAttribute="trailing" id="4qS-03-PFO"/>
                             <constraint firstAttribute="bottom" secondItem="KYU-B8-cUW" secondAttribute="bottom" id="B2v-Gq-Y1L"/>
+                            <constraint firstItem="1HL-Om-LKw" firstAttribute="top" secondItem="btS-p8-B7Z" secondAttribute="top" constant="10" id="LRO-AY-g37"/>
+                            <constraint firstAttribute="trailing" secondItem="1HL-Om-LKw" secondAttribute="trailing" constant="10" id="Oqe-GI-ncW"/>
+                            <constraint firstItem="1HL-Om-LKw" firstAttribute="leading" secondItem="btS-p8-B7Z" secondAttribute="leading" constant="14" id="Qio-xa-rae"/>
                             <constraint firstItem="KYU-B8-cUW" firstAttribute="leading" secondItem="btS-p8-B7Z" secondAttribute="leading" constant="6" id="Tg9-9l-vr8"/>
-                            <constraint firstItem="1HL-Om-LKw" firstAttribute="top" secondItem="btS-p8-B7Z" secondAttribute="top" id="Vpv-en-FyY"/>
-                            <constraint firstAttribute="trailing" secondItem="1HL-Om-LKw" secondAttribute="trailing" id="Zgg-b9-iPl"/>
+                            <constraint firstAttribute="bottom" secondItem="1HL-Om-LKw" secondAttribute="bottom" constant="10" id="WjK-Sf-cM2"/>
                             <constraint firstItem="KYU-B8-cUW" firstAttribute="top" secondItem="btS-p8-B7Z" secondAttribute="top" id="aEL-yH-N1p"/>
-                            <constraint firstAttribute="bottom" secondItem="1HL-Om-LKw" secondAttribute="bottom" id="eX1-5W-git"/>
-                            <constraint firstItem="1HL-Om-LKw" firstAttribute="leading" secondItem="btS-p8-B7Z" secondAttribute="leading" constant="6" id="xXy-VP-mna"/>
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Da1-09-wR4">
