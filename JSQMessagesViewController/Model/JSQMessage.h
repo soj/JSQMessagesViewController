@@ -27,10 +27,8 @@
  */
 @interface JSQMessage : NSObject <JSQMessageData, NSCoding, NSCopying>
 
-/**
- *  The body text of the message. This value must not be `nil`.
- */
 @property (copy, nonatomic) NSString *text;
+@property (copy, nonatomic) UIImage *image;
 
 /**
  *  The name of user who sent the message. This value must not be `nil`.
@@ -42,7 +40,6 @@
  */
 @property (copy, nonatomic) NSDate *date;
 
-@property (copy, nonatomic) UIImage *image;
 
 #pragma mark - Initialization
 

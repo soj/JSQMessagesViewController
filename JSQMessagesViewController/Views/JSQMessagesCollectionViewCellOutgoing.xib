@@ -117,10 +117,6 @@
                 <outlet property="cellTopLabel" destination="jxM-YD-sVG" id="acH-pr-spx"/>
                 <outlet property="cellTopLabelHeightConstraint" destination="9oK-E7-iXA" id="MZM-kV-2dI"/>
                 <outlet property="imageView" destination="v6s-uL-YrM" id="klZ-m3-rar"/>
-                <outlet property="imageViewAvatarHorizontalSpaceConstraint" destination="Lhj-3r-maL" id="ahn-cy-mOV"/>
-                <outlet property="imageViewBottomVerticalSpaceConstraint" destination="oBM-73-ndP" id="Wla-UQ-xcP"/>
-                <outlet property="imageViewMarginHorizontalSpaceConstraint" destination="onB-zJ-ysj" id="C7H-tL-uBc"/>
-                <outlet property="imageViewTopVerticalSpaceConstraint" destination="rJd-Mm-LuL" id="osI-hS-U20"/>
                 <outlet property="messageBubbleContainerView" destination="2zh-vR-QJW" id="pu0-GU-eZl"/>
                 <outlet property="messageBubbleLeftRightMarginConstraint" destination="tya-FG-SP6" id="3oJ-6X-GCK"/>
                 <outlet property="messageBubbleTopLabel" destination="p52-YN-yLu" id="SLH-sA-Chu"/>
